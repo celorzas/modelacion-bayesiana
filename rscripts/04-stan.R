@@ -1,5 +1,5 @@
 ## Setup --------------------------------------------
-library(cmdstanr)
+library(cmdstanr) #falta instalar el cmdstanr 
 library(posterior)
 library(bayesplot)
 
@@ -28,6 +28,7 @@ print_file <- function(file) {
 print_file("modelos/tutorial/esqueleto.stan")
 
 ## Modelo Beta-Binomial --------------------------------
+setwd("-/curso") #aquí va el guión garigoleado 
 modelos_files <- "modelos/compilados/tutorial"
 ruta <- file.path("modelos/tutorial/beta-binomial.stan")
 modelo <- cmdstan_model(ruta, dir = modelos_files)
@@ -68,7 +69,7 @@ data <- tibble( id = factor(seq(1, 8)),
 
 print_file("modelos/caso-escuelas/modelo-escuelas.stan")
 
-modelos_files <- "modelos/compilados/caso-escuelas"
+modelos_files <- "modelos/caso-escuelas"
 ruta <- file.path("modelos/caso-escuelas/modelo-escuelas.stan")
 modelo <- cmdstan_model(ruta, dir = modelos_files)
 
