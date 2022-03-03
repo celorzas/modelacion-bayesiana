@@ -25,11 +25,10 @@ print_file <- function(file) {
   cat(paste(readLines(file), "\n", sep=""), sep="")
 }
 
-print_file("modelos/tutorial/esqueleto.stan")
+
 
 ## Modelo Beta-Binomial --------------------------------
-#setwd("~/curso") 
-modelos_files <- "modelos/compilados/tutorial"  #quitar compilados 
+modelos_files <- "modelos/compilados/tutorial"  
 ruta <- file.path("modelos/tutorial/beta-binomial.stan")
 modelo <- cmdstan_model(ruta, dir = modelos_files)
 
