@@ -20,7 +20,7 @@
 
 * Contenido                                                             :toc:
 :PROPERTIES:
-:TOC:      :include all  :ignore this :depth 3
+:TOC:      :include all  :ignore this :depth 2
 :END:
 :CONTENTS:
 - [[#introducción][Introducción]]
@@ -295,3 +295,38 @@ hacerlas si no cuentan con experiencia en: ~Git~, ~Github~, ~R~ y el ~tidyverse~
 bibliographystyle:abbrvnat
 bibliography:references.bib
 
+* COMMENT Plan de trabajo [5/17][29%]                              :noexport:
+:PROPERTIES:
+:UNNUMBERED: notoc
+:END:
+** DONE Repaso 
+CLOSED: [2022-03-04 Fri 19:42]
+** DONE Integración numerica
+CLOSED: [2022-03-04 Fri 19:43]
+** DONE MCMC (Parte 1)
+CLOSED: [2022-03-04 Fri 19:43]
+** DONE MCMC (Parte 2)
+CLOSED: [2022-03-04 Fri 19:43]
+** DONE HMC
+CLOSED: [2022-03-04 Fri 19:43]
+** NEXT Diagnosticos
+** TODO Posterior Predictive Sampling
+** TODO Simulation Based calibration
+** TODO Evaluation and cross validation
+** TODO Posterior and prior predictive checks
+** TODO Poststratification
+** TODO Decision Analysis
+** TODO Clustering
+** TODO Item response theory 
+** TODO Variational inference
+
+* COMMENT Posibles temas                                           :noexport:
+:PROPERTIES:
+:UNNUMBERED: notoc
+:END:
+** TODO Multi-Armed Bandits
+Tomar el caso en [[https://www.smartly.io/blog/tutorial-how-we-productized-bayesian-revenue-estimation-with-stan][Smartly.io]] o también [[https://www.linkedin.com/pulse/tutorial-how-we-productized-bayesian-revenue-estimation-markus-ojala/][aqui]]. Comentarios por [[https://statmodeling.stat.columbia.edu/2018/01/21/smartly-io-productized-bayesian-revenue-estimation-stan/][Andrew Gelman]]. 
+** TODO SIR modeling 
+Tomar el caso en [Grenable, Stan tutorial]. 
+
+Referencia muy general [[https://michaeldewittjr.com/dewitt_blog/posts/2020-08-28-bayesian-sir/][Michael DeWitt: Bayesian SIR]]. El caso mas completo aqui: [[https://mc-stan.org/users/documentation/case-studies/boarding_school_case_study.html][Bayesian workflow for disease transmission modeling in Stan]]. Referencia de Grenable: [[https://www.generable.com/post/fitting-a-basic-sir-model-in-stan][Fitting a Basic SIR Model in Stan]]. 
